@@ -1,5 +1,18 @@
+// add header and switch between "pages"
 function loadHeader(response) {
   $('header').html(response);
+
+  $('#checkout').click(function(e) {
+    e.preventDefault();
+    $('#products').hide();
+    $('#checkout-table').removeClass('col-md-3').addClass('col-md-12');
+  })
+
+  $('#home').click(function(e) {
+    e.preventDefault();
+    $('#checkout-table').removeClass('col-md-12').addClass('col-md-3');
+    $('#products').show();
+  })
 }
 $.get('./components/header.html', loadHeader)
 
