@@ -1,0 +1,35 @@
+body {
+  overflow-x: hidden;
+}
+
+main {
+  margin: 150px;
+}
+
+#nav-total {
+  color: rgba(255,255,255,.5);
+}
+
+.extra-margin-md {
+  margin-top: 50px;
+}
+
+.card {
+  padding: 15px;
+}
+.card-title {
+  font-weight: bold;
+  font-size: 150%;
+}
+
+.card-subtitle {
+  font-style: italic;
+}
+
+thead {
+  font-weight: bold;
+}
+
+footer {
+  margin-top: 100px;
+}
