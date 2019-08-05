@@ -77,6 +77,8 @@ function displayCart(cart) {
     let product_id = $(this).attr('id').split('-')[1];
     $(`#table-${product_id}`).html(``);
     delete cart[product_id];
+
+    displayCart(cart);
   })
 })
 }
